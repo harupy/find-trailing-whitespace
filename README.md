@@ -1,7 +1,8 @@
 # Find Trailing Whitespace
 
-![Test](https://github.com/harupy/find-trailing-whitespace/workflows/Test/badge.svg?branch=master)
-![tag](https://img.shields.io/github/v/tag/harupy/find-trailing-whitespace?color=green)
+[![Test](https://github.com/harupy/find-trailing-whitespace/workflows/Test/badge.svg?branch=master&event=push)](https://github.com/harupy/find-trailing-whitespace/actions?query=workflow%3ATest+event%3Apush)
+[![tag](https://img.shields.io/github/v/tag/harupy/find-trailing-whitespace?color=green)](https://github.com/harupy/find-trailing-whitespace/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A GitHub Action to find trailing whitespace.
 
