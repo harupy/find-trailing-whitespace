@@ -4,10 +4,10 @@ set -e
 
 tw_lines=""  # Lines containing trailing whitespaces.
 
-git remote -v
+git fetch origin master:master
 
 # Iterate through changed files.
-for file in $(git diff --name-only HEAD master | sed -e 's/^/.\//')
+for file in $(git diff --name-only master | sed -e 's/^/.\//')
 do
   lines=$(egrep -rnIH " +$" $file | cut -f-2 -d ":")
   if [ ! -z "$lines" ]; then
