@@ -4,6 +4,7 @@ set -e
 
 git branch -a
 git fetch origin master:master
+git branch -a
 
 tw_lines=""  # Lines containing trailing whitespaces.
 
