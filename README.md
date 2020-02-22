@@ -1,5 +1,7 @@
 # Find Trailing Whitespace
 
+![Test](https://github.com/harupy/find-trailing-whitespace/workflows/Test/badge.svg?branch=master)
+
 A GitHub Action to find trailing whitespace.
 
 ## Example Workflow
