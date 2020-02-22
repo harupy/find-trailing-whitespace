@@ -2,13 +2,14 @@
 
 set -e
 
-tw_lines=""  # Lines containing trailing whitespaces.
-
 git fetch origin master:master
+
+tw_lines=""  # Lines containing trailing whitespaces.
 
 # Iterate through changed files.
 for file in $(git diff --name-only master | sed -e 's/^/.\//')
 do
+  echo $file
   lines=$(egrep -rnIH " +$" $file | cut -f-2 -d ":")
   if [ ! -z "$lines" ]; then
     tw_lines+=$([[ -z "$tw_lines" ]] && echo "$lines" || echo $'\n'"$lines")
