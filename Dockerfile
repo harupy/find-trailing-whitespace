@@ -1,4 +1,4 @@
-FROM alpine/git:v2.24
+FROM alpine/git:v2.24.1
 
 ENV WORKDIR="/find-trailing-whitespace"
 WORKDIR ${WORKDIR}
