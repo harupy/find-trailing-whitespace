@@ -5,6 +5,10 @@
 
 A GitHub Action to find trailing whitespace.
 
+## GitHub Marketplace
+
+[Find Trailing Whitespace](https://github.com/marketplace/actions/find-trailing-whitespace)
+
 ## Example Workflow
 
 ```yaml
