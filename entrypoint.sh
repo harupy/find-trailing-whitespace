@@ -2,6 +2,8 @@
 
 tw_lines=""  # Lines containing trailing whitespaces.
 
+git remote -v
+
 # Iterate through changed files.
 for file in $(git diff --name-only origin/master | sed -e 's/^/.\//')
 do
