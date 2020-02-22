@@ -2,14 +2,10 @@
 
 set -e
 
-git branch -a
-git fetch origin master:master
-git branch -a
-
 tw_lines=""  # Lines containing trailing whitespaces.
 
 # Iterate through changed files.
-for file in $(git diff --name-only master | sed -e 's/^/.\//')
+for file in $(git ls-files | sed -e 's/^/.\//')
 do
   echo $file
   lines=$(egrep -rnIH " +$" $file | cut -f-2 -d ":")
