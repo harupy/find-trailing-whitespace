@@ -2,7 +2,23 @@
 
 A GitHub Action to find trailing whitespace.
 
-## Run locally
+## Example Workflow
+
+```yaml
+name: Example
+
+on: pull_request
+
+jobs:
+  test:
+    name: Find Trailing Whitespace
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: harupy/find-trailing-whitespace@master
+```
+
+## Test Locally
 
 ```bash
 docker build -t test .
