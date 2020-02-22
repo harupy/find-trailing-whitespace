@@ -10,7 +10,7 @@ name: Example
 on: pull_request
 
 jobs:
-  test:
+  example:
     name: Find Trailing Whitespace
     runs-on: ubuntu-latest
     steps:
