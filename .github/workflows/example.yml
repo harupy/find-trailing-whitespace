@@ -1,0 +1,10 @@
+name: Example
+
+on: pull_request
+
+jobs:
+  example:
+    name: Find Trailing Whitespace
+    runs-on: ubuntu-latest
+    steps:
+      - uses: harupy/find-trailing-whitespace@master
