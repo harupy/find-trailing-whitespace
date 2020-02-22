@@ -1,0 +1,11 @@
+name: Test
+
+on: pull_request
+
+jobs:
+  test:
+    name: Find Trailing Whitespace
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./

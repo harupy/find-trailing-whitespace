@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
+set -e
+
 tw_lines=""  # Lines containing trailing whitespaces.
 
-# Iterate through changed files.
-for file in $(git diff --name-only origin/master | sed -e 's/^/.\//')
+# TODO (harupy): Check only changed files.
+for file in $(git ls-files | sed -e 's/^/.\//')
 do
   lines=$(egrep -rnIH " +$" $file | cut -f-2 -d ":")
   if [ ! -z "$lines" ]; then
@@ -17,6 +19,7 @@ exit_code=0
 if [ ! -z "$tw_lines" ]; then
   echo -e "\n***** Lines containing trailing whitespace *****\n"
   echo -e "${tw_lines[@]}"
+  echo -e "\nFailed.\n"
   exit_code=1
 fi
 
