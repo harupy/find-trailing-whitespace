@@ -4,7 +4,7 @@ set -e
 
 tw_lines=""  # Lines containing trailing whitespaces.
 
-# Iterate through changed files.
+# TODO (harupy): Check only changed files.
 for file in $(git ls-files | sed -e 's/^/.\//')
 do
   lines=$(egrep -rnIH " +$" $file | cut -f-2 -d ":")
