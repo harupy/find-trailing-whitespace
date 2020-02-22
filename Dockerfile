@@ -4,6 +4,6 @@ ENV WORKDIR="/find-trailing-whitespace"
 WORKDIR ${WORKDIR}
 
 RUN apk add bash
-COPY ./entrypoint.sh ${WORKDIR}/entrypoint.sh
+COPY ./entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT bash ${WORKDIR}/entrypoint.sh
+ENTRYPOINT bash /entrypoint.sh
