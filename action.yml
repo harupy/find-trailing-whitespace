@@ -1,8 +1,8 @@
 name: Find Trailing Whitespace
 author: harupy
 branding:
-  icon: 'git-pull-request'
-  color: 'purple'
+  icon: 'search'
+  color: 'green'
 description: Find trailing whitespace
 runs:
   using: 'docker'

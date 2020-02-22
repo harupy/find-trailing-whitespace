@@ -1,5 +1,8 @@
 FROM alpine/git:v2.24.1
 
-COPY entrypoint.sh /entrypoint.sh
+ENV WORKDIR="/find-trailing-whitespace"
+WORKDIR ${WORKDIR}
 
-ENTRYPOINT . /entrypoint.sh
+RUN apk add bash
+
+ENTRYPOINT bash ${WORKDIR}/entrypoint.sh
