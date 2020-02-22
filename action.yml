@@ -1,0 +1,9 @@
+name: Find Trailing Whitespace
+author: harupy
+branding:
+  icon: 'git-pull-request'
+  color: 'purple'
+description: Find trailing whitespace
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
