@@ -1,4 +1,4 @@
-# Find Trailing Whitespace
+# Find Trailing Whitespace 
 
 [![Test](https://github.com/harupy/find-trailing-whitespace/workflows/Test/badge.svg?branch=master&event=push)](https://github.com/harupy/find-trailing-whitespace/actions?query=workflow%3ATest+event%3Apush)
 [![tag](https://img.shields.io/github/v/tag/harupy/find-trailing-whitespace?color=green)](https://github.com/harupy/find-trailing-whitespace/releases/latest)
