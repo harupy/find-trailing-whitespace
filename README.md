@@ -10,7 +10,9 @@ A GitHub Action to find trailing whitespace.
 
 [Find Trailing Whitespace](https://github.com/marketplace/actions/find-trailing-whitespace)
 
-## Example Workflow
+## Example
+
+#### Workflow
 
 ```yaml
 name: Example
@@ -25,6 +27,10 @@ jobs:
       - uses: actions/checkout@v2
       - uses: harupy/find-trailing-whitespace@master
 ```
+
+#### Pull Request (containing trailing whitespace)
+
+https://github.com/harupy/find-trailing-whitespace/pull/2
 
 ## Test Locally
 
