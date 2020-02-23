@@ -30,5 +30,5 @@ jobs:
 
 ```bash
 docker build -t test .
-docker run -v $(pwd):/$(basename $(pwd)) test
+docker run -v $(pwd):/find-trailing-whitespace test
 ```
