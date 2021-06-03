@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: harupy/find-trailing-whitespace@master
+      - uses: harupy/find-trailing-whitespace@v1
 ```
 
 #### Pull Request (containing trailing whitespace)
